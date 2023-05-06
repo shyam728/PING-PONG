@@ -1,0 +1,50 @@
+:root{
+  --rod1Primary:#0726b1;
+  --rod1Secondary:#889ee5;
+  --rod2Primary:#9e1cdf;
+  --rod2Secondary:#e791ff;
+  --ballPrimary : rgb(226, 10, 10);
+  --ballSecondary : rgb(117, 56, 18); 
+  --body: rgb(255, 255, 255);
+}
+
+#container {
+  position: relative;
+}
+
+#ball {
+  width: 30px;
+  height: 30px;
+  /* background-color: red; */
+  background: linear-gradient(var(--ballSecondary),var(--ballPrimary));
+  box-shadow:0 1px 12px var(--ballPrimary);
+  position: fixed;
+  top: 20px;
+  left: 52.5%;
+  border-radius: 50%;
+}
+
+#rod1, #rod2 {
+  width: 300px;
+  height: 30px;
+  position: fixed;
+  left: 50%;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#rod1 {
+  /* background-color: blue; */
+  top: 0px;
+  background: linear-gradient(var(--rod1Secondary),var(--rod1Primary));
+  box-shadow:0 1px 12px var(--rod1Primary);    
+}
+
+#rod2 {
+  background: linear-gradient(var(--rod2Primary),var(--rod2Secondary));
+  box-shadow:0 -1px 12px var(--rod2Primary);
+  /* background-color: blueviolet; */
+  bottom: 0px;
+}
