@@ -21,7 +21,8 @@ let gameOn = false;
 let windowWidth = window.innerWidth,
     windowHeight = window.innerHeight;
 
-
+// starting popup
+alert("Use Enter to start and 'A' and 'D' keys to move");
 
 (function () {
     rod = localStorage.getItem(storeName);
